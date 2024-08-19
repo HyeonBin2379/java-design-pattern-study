@@ -10,6 +10,10 @@ public class StringDisplay implements AbstractDisplay {
         this.width = string.length();
     }
 
+    private void printLine() {
+        System.out.println("+" + "-".repeat(width) + "+");
+    }
+
     @Override
     public void open() {
         printLine();
@@ -23,9 +27,5 @@ public class StringDisplay implements AbstractDisplay {
     @Override
     public void print() {
         System.out.println("|" + string + "|");
-    }
-
-    private void printLine() {
-        System.out.println("+" + "-".repeat(width) + "+");
     }
 }
