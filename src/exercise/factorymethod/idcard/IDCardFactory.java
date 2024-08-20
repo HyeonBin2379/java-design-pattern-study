@@ -7,7 +7,8 @@ public class IDCardFactory extends Factory {
 
     private int serial = 100;
 
-    // 멀티스레드로 동작 시 다른 인스턴스에 동일한 일련번호가 붙는 것을 방지하기 위해 동기화
+    // 일련번호 부여 시 멀티스레드 환경에서 생성된 다른 인스턴스에 동일한 번호가 붙지 않도록
+    // 동기화를 적용하는 것이 좋음
     @Override
     public synchronized Product createProduct(String owner) {
         return new IDCard(owner, serial++);
