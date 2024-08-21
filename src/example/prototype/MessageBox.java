@@ -27,6 +27,7 @@ public class MessageBox extends AbstractProduct {
 
     /* AbstractProduct의 clone 메서드를 사용한 인스턴스 복제 메서드를
        복사 생성자를 사용하는 인스턴스 복제 메서드로 재정의 */
+    @Override
     public Product createCopy() {
         return new MessageBox(this);
     }
