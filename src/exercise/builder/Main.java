@@ -23,6 +23,14 @@ public class Main {
                 System.out.println(filename);
                 System.out.println("HTML 파일 " + filename + "이 작성되었습니다!!");
                 break;
+            case "javaSource":
+                JavaSourceBuilder javaSourceBuilder = new JavaSourceBuilder();
+                director = new Director(javaSourceBuilder);
+                director.construct();
+                String javaFile = javaSourceBuilder.getJavaClassResult();
+                System.out.println(javaFile);
+                System.out.println("Java 파일 " + javaFile + "를 작성했습니다.");
+                break;
             default:
                 usage();
                 System.exit(0);

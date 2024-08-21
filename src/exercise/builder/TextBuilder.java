@@ -1,11 +1,8 @@
 package exercise.builder;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
-
 public class TextBuilder implements Builder{
 
+    private final StringBuilder sb = new StringBuilder();
     private String filename = "untitled.txt";
 
     @Override
@@ -31,10 +28,10 @@ public class TextBuilder implements Builder{
     @Override
     public void close() {
         sb.append("===========================\n");
-        makefile(filename, sb.toString());
     }
 
     public String getTextResult() {
+        makefile(filename, sb.toString());
         return sb.toString();
     }
 }

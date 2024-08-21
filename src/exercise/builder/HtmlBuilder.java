@@ -1,9 +1,5 @@
 package exercise.builder;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
-
 public class HtmlBuilder implements Builder {
 
     private final StringBuilder sb = new StringBuilder();
@@ -14,9 +10,9 @@ public class HtmlBuilder implements Builder {
         filename = title + ".html";
         sb.append("<!DOCTYPE html>");
         sb.append("<html>\n");
-        sb.append("<head><meta charset=\"UTF-8\"><title>\n");
+        sb.append("<head>\n<meta charset=\"UTF-8\">\n<title>");
         sb.append(title);
-        sb.append("</title></head>\n");
+        sb.append("</title>\n</head>\n");
         sb.append("<body>\n");
         sb.append("<h1>");
         sb.append(title);
@@ -45,10 +41,10 @@ public class HtmlBuilder implements Builder {
     public void close() {
         sb.append("</body>\n");
         sb.append("</html>\n");
-        makefile(filename, sb.toString());
     }
 
     public String getHTMLResult() {
+        makefile(filename, sb.toString());
         return filename;
     }
 }
