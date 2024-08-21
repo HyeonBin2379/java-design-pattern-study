@@ -1,0 +1,16 @@
+===========================
+[Greeting]
+
+■ 일반적인 인사
+
+  · How are you?
+  · Hello.
+  · Hi.
+
+■ 시간대별 인사
+
+  · Good morning.
+  · Good afternoon
+  · Good evening
+
+===========================
