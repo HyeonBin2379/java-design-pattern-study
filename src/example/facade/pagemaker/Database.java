@@ -16,8 +16,7 @@ class Database {
 
     // 생성자를 노출시키지 않으면서 이 클래스에 정의된 작업을 수행하기 위해 static 메서드 사용
     // 지정한 데이터 파일에 관한 Properties의 인스턴스 생성 메서드
-    public static Properties getProperties(String dbName) throws IOException {
-        String filename = dbName + ".txt";
+    public static Properties getProperties(String filename) throws IOException {
         Properties prop = new Properties();
         prop.load(new FileReader(DIRECTORY_PATH + filename));
         return prop;
