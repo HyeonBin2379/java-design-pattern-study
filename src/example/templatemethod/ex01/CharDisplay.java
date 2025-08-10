@@ -1,4 +1,4 @@
-package example.templatemethod;
+package example.templatemethod.ex01;
 
 // Template Method 패턴의 ConcreteClass에 해당
 public class CharDisplay extends AbstractDisplay{

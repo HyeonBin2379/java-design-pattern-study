@@ -1,4 +1,4 @@
-package example.templatemethod;
+package example.templatemethod.ex01;
 
 // Template Method 패턴의 AbstractClass에 해당
 // 추상 클래스로 구현

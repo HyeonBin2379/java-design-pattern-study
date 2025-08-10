@@ -1,4 +1,4 @@
-package example.templatemethod;
+package example.templatemethod.ex01;
 
 public class Main {
 
