@@ -1,4 +1,4 @@
-package example.singleton;
+package example.singleton.v2;
 
 public class Main {
 

@@ -1,8 +1,5 @@
 package example.strategy.ex02.duck;
 
-import example.strategy.ex02.fly.FlyNoWay;
-import example.strategy.ex02.quack.Squeak;
-
 public class DecoyDuck extends Duck {
 
     @Override

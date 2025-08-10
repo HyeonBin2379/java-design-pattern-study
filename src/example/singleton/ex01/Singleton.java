@@ -1,4 +1,4 @@
-package example.singleton;
+package example.singleton.ex01;
 
 public class Singleton {
 
