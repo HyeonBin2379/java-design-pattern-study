@@ -1,4 +1,4 @@
-package example.strategy;
+package example.strategy.ex01;
 
 // Strategy 패턴의 Context에 해당
 public class Player {

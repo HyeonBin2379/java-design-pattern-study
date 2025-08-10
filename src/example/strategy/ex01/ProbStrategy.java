@@ -1,4 +1,4 @@
-package example.strategy;
+package example.strategy.ex01;
 
 import java.util.Arrays;
 import java.util.Random;

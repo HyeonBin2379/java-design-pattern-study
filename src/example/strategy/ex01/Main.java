@@ -1,4 +1,4 @@
-package example.strategy;
+package example.strategy.ex01;
 
 public class Main {
 

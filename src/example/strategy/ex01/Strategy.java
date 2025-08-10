@@ -1,4 +1,4 @@
-package example.strategy;
+package example.strategy.ex01;
 
 // Strategy 패턴의 Strategy에 해당
 public interface Strategy {

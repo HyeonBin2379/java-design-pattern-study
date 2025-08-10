@@ -1,4 +1,4 @@
-package example.strategy;
+package example.strategy.ex01;
 
 public enum Hand {
     // 가위 바위 보를 나타내는 3개의 enum 상수
