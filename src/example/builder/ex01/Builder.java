@@ -1,4 +1,4 @@
-package example.builder;
+package example.builder.ex01;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.io.Writer;
 public abstract class Builder {
 
     // 생성할 파일을 저장할 디렉토리 경로(상수로 처리)
-    private static final String DIRECTORY_PATH = "src\\example\\builder\\";
+    private static final String DIRECTORY_PATH = "src\\example\\builder\\ex01\\";
 
     // Builder와 상속관계인 클래스에서만 접근, 즉 ConcreteBuiler만 사용 가능
     protected final StringBuilder sb = new StringBuilder();

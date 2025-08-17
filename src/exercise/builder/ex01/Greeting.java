@@ -1,4 +1,4 @@
-package exercise.builder;
+package exercise.builder.ex01;
 
 // JavaSourceBuilder로 작성한 자바 코드
 public class Greeting {

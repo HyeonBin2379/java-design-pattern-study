@@ -1,4 +1,4 @@
-package exercise.builder;
+package exercise.builder.ex01;
 
 public class HtmlBuilder implements Builder {
 

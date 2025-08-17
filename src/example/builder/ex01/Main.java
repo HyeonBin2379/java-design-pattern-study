@@ -1,4 +1,4 @@
-package example.builder;
+package example.builder.ex01;
 
 // Builder 패턴의 Client에 해당
 public class Main {

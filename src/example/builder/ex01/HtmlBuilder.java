@@ -1,4 +1,4 @@
-package example.builder;
+package example.builder.ex01;
 
 // Builder 패턴의 ConcreteBuilder에 해당
 public class HtmlBuilder extends Builder {

@@ -1,12 +1,10 @@
-package example.builder;
+package exercise.builder.ex01;
 
-// Builder 패턴의 ConcreteBuilder에 해당
-public class TextBuilder extends Builder {
+public class TextBuilder implements Builder{
 
-    // 생성할 텍스트 파일 이름의 초기값
+    private final StringBuilder sb = new StringBuilder();
     private String filename = "untitled.txt";
 
-    // 아래의 메서드들은 Builder에서 정의한 메서드 구현
     @Override
     public void makeTitle(String title) {
         filename = title + ".txt";
@@ -32,8 +30,6 @@ public class TextBuilder extends Builder {
         sb.append("===========================\n");
     }
 
-    // ConcreteBuilder는 Builder에서 정의한 메서드 이외에도 최종 결과물을 반환하는 메서드를 정의
-    // Text 파일 생성 후 그 내용을 반환
     public String getTextResult() {
         makefile(filename, sb.toString());
         return sb.toString();

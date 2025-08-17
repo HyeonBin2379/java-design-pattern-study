@@ -1,4 +1,4 @@
-package exercise.builder;
+package exercise.builder.ex01;
 
 import java.io.FileWriter;
 import java.io.IOException;
